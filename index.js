@@ -36,7 +36,7 @@ for (const file of commandFiles){
 	
 client.on('ready', () => {
     let status = [
-        `${client.users.cache.fil4ter(a => a.bot).size} Bots`,
+        `${client.users.cache.filter(a => a.bot).size} Bots`,
         `${client.users.cache.filter(a => !a.bot).size} Humanos`
     ],
     i=0;
